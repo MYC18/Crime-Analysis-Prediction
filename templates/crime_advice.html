@@ -1,0 +1,276 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<style>
+.accordion {
+  background-color: #EBEBEB;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid lightgray;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  text-align:left;
+}
+</style>
+
+<!-- Bootstrap https://getbootstrap.com/docs/5.0/components/accordion/ -->
+<div class="row content-row" style="width:70%; margin:0 auto; margin-bottom:80px;">
+  <h3 class="table-des" style="margin-top:0px">Crime Prevention Advice</h3>
+  <button class="accordion">Antisocial behaviour</button>
+  <div class="panel">
+    <p>
+      What qualifies as antisocial behaviour:
+        <ul>
+          <li>noise nuisance</li>
+          <li>neighbour disputes</li>
+          <li>verbal abuse</li>
+          <li>threatening behaviour</li>
+          <li>harassment and intimidation</li>
+          <li>vandalism</li>
+          <li>criminal damage.</li>
+        </ul>
+        How to report antisocial behaviour:
+      <ul>
+        <li>your landlord, who has a duty to make sure that tenants don’t behave in a way that breaks their tenancy agreement,</li>
+        <li>the right department in your local council, e.g., housing, environmental health or an antisocial behaviour team,</li>
+        <li>the police, if you think a crime has been committed.</li>
+      </ul>
+        If you experience antisocial behaviour, you may have to help provide evidence before action can be taken (e.g., recording).
+        <br>
+      <br>
+        You may have to call the police on 101 or even 999 if it’s an emergency.
+    </p>
+  </div>
+
+  <button class="accordion">Burglary</button>
+  <div class="panel">
+    <p>
+      Precautions to take:
+    <ul>
+  <li>close and lock all your doors and windows</li>
+<li>double-lock any door</li>
+<li>make sure that any valuables are out of sight</li>
+<li>never leave car documents or ID in obvious place</li>
+<li>in the evening, shut the curtains and leave lights on</li>
+<li>if you’re out all day, then it’s advisable to use a timer device to automatically turn lights and a radio on at night</li>
+<li>set your burglar alarm</li>
+<li>make sure the side gate is locked</li>
+<li>lock your shed or garage.
+    </ul>
+
+    </p>
+  </div>
+
+  <button class="accordion">Domestic violence</button>
+  <div class="panel">
+    <p>If you have or are experiencing domestic violence getting help is a priority:
+      <br>
+      <br>
+      In an emergency, call 999. If it is not an emergency, you could contact your local police station and discuss your situation with them.
+    <br>
+      <br>
+      You can also anonymously call one of the helplines listed below:
+    <br>
+      <br>
+      English National Domestic Violence Helpline: 0808 2000 247
+    <br>
+      <br>
+      Men's Advice Line: 0808 801 0327
+    <br>
+      <br>
+      Respect (for people who are abusive to partners): 0845 122 8609
+    <br>
+      <br>
+      You can also visit GOV.UK for more help and advice.
+</p>
+  </div>
+
+  <button class="accordion">Drugs</button>
+  <div class="panel">
+    <p>
+      The main legislation covering drugs is the following: the Misuse of Drugs Act 1971. Drugs are classified into three different categories: Class A, B and C. With Class A drugs considered to be the most harmful and dangerous ones. Drugs regulated in this way are known as 'controlled' substances.
+    <br>
+      <br>
+      Under the Misuse of Drugs Act 1971 it is an offence to do the following:
+      <br>
+    <ul>
+    <li>possess a controlled substance</li>
+      <li>possess a controlled substance with the intent to supply</li>
+        <li>unlawfully supply a controlled drug (even when there's no charge made for the drug)</li>
+        <li>allow premises you occupy or manage to be used for the purpose of drug taking.
+</ul>
+      <br>
+Call Crimestoppers anonymously on 0800 555 111 in case you have any information about drug dealers.
+
+    </p>
+  </div>
+
+  <button class="accordion">Possession of weapons</button>
+  <div class="panel">
+    <p>
+      It is illegal to do the following:
+    <br>
+    <ul>
+    <li>sell a knife of any kind to a minor</li>
+    <li>carry a knife in public without good reason</li>
+    <li>carry, buy, or sell any type of banned knife</li>
+    <li>use any knife (legal or not) in a threatening way.</li>
+  </ul>
+    <br>
+What is considered to be a 'good reason' to carry a knife:
+    <br>
+    <ul>
+    <li>taking knives, you use at work to/from work</li>
+    <li>taking knives to a gallery or museum to be exhibited</li>
+    <li>the knife is going to be used for theatre, film, television, historical re-enactments, or religious purposes.</li>
+  <br>
+    <br>
+The following knives are completely banned:
+      <br>
+    <ul>
+  <li>disguised knife</li>
+  <li>stealth knife and baton</li>
+  <li>sword</li>
+  <li>zombie knife.</li>
+      </ul>
+    <br>
+Guns and firearms:
+      <br>
+       <br>
+You need a firearms certificate issued by the police to possess, buy, or acquire a firearm or shotgun. Certain firearms are completely prohibited.
+    <br>
+       <br>
+      You must also have a certificate to buy ammunition.
+    <br>
+       <br>
+      It is illegal for a minor to purchase an imitation firearm and for anyone to sell an imitation firearm to a minor.
+    <br>
+       <br>
+      It is an offence to be in possession of a firearm without a certificate or to be in possession of a prohibited weapon.
+    <br>
+       <br>
+      If you're caught illegally carrying a knife or a gun, even an imitation one, you will be arrested and prosecuted.<br>
+       <br>
+      Play your part in reducing knife and gun crime by reporting people you know, or suspect may be carrying a weapon illegally.
+    <br>
+       <br>
+      Learn more by visiting Knife Free.
+    </p>
+  </div>
+
+  <button class="accordion">Theft from a person</button>
+  <div class="panel">
+    <p>
+      Don’t leave your phone, iPad, tablet, or camera unattended, out of your sight or left on a table.
+    <br>
+      <br>
+      Always be aware of your mobile and your whereabouts and act accordingly. And when you have finished using it, put it away.
+    <br>
+      <br>
+      Use your device’s security features, applications or PIN locking mechanisms to protect your data and prevent the phone being used if stolen.
+    <br>
+      <br>
+      Track it. Consider installing a tracker application on your mobile phone. They are readily available online. If your mobile’s ever stolen, act promptly.
+    <br>
+    <br>
+      It’s a good idea to scan the area around ATMs before you use them. Be aware of anyone standing close by and always check the machine to see if it has been tampered with before using it.
+    <br>
+      <br>
+      Beware of ATM frauds. Things to look out for are devices attached to the machine. If you do see something suspicious contact the police and the bank.
+    <br>
+      <br>
+      Thieves will watch as you key in your PIN or distract you while you are withdrawing cash. Be vigilant. Cover your PIN and always keep an eye on your card. If someone taps you on the shoulder or tries to speak to you, just ignore them. After leaving the ATM, put your card right away.
+</p>
+  </div>
+
+  <button class="accordion">Vehicle theft</button>
+  <div class="panel">
+    <p>
+      Here are the following steps to avoid vehicle theft:
+  <br>
+      <br>
+      1. Always lock your vehicle
+      <br>
+      2. Close windows
+      <br>
+      3. Secure your number plates with tamper-resistant screws
+      <br>
+      4. Do not leave any valuables in the car
+      <br>
+      5. Do not let electronics’ accessories in evidence (as thieves might think the electronic device is stored in the vehicle).
+</p>
+  </div>
+
+  <button class="accordion">Violence and sexual offences</button>
+  <div class="panel">
+    <p>
+      Any sexual contact without your consent is sexual assault and is a crime.
+      <br>
+      <br>
+      Contacting the police will start the process of investigating your attacker. The police officer’s priority is safeguarding you.
+      <br>
+      <br>
+      If you choose to support a police investigation you will be supported every step along the way.
+</p>
+  </div>
+
+  <button class="accordion">Useful information</button>
+  <div class="panel">
+    <p>
+    Local police: 101
+     <br>
+      <br>
+    Emergency: 999
+     <br>
+      <br>
+    Crimestoppers(to report a crime anonymously):  0800 555 111
+      <br>
+      <br>
+    English National Domestic Violence Helpline: 0808 2000 247
+      <br>
+      <br>
+    Men's Advice Line: 0808 801 0327
+      <br>
+      <br>
+      Neighbourhood watch: <a href="mailto:https://www.ourwatch.org.uk">https://www.ourwatch.org.uk</a>
+
+</p>
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+{%endblock%}

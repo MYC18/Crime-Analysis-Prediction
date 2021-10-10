@@ -1,0 +1,107 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+        <form method="POST" action="/statistics">
+    <div class="form-group col-md-2">
+        <select id="start_year" name="start_year" class="form-control">
+            <option selected>From...</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+    </div>
+    <div class="form-group col-md-1">
+        <select id="start_month" name="start_month" class="form-control">
+            <option selected>From...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+        <select id="finish_year" name="finish_year" class="form-control">
+            <option selected>To...</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+    </div>
+    <div class="form-group col-md-1">
+        <select id="finish_month" name="finish_month" class="form-control">
+            <option selected>To...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4">
+        <select id="location" name="location" class="form-control">
+            <option selected>Select Location...</option>
+            <option>West-Midlands</option>
+            <option>Staffordshire</option>
+            <option>Warwickshire</option>
+            <option>West-Mercia</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </div>
+</form>
+
+
+        <div class="row content-row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6 graph" >
+                            <h3 class="table-des">Crime Types - Pairplot</h3>
+                            <img src="static/plots/crime_pair_plot_street.png">
+
+                        </div>
+                        <div class="col-sm-6 search_object">
+                            <h3 class="table-des">Crime Count - HeatMap</h3>
+                            <img src="static/heatmaps/crime_rate_heatmap.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-m-12">
+                            <h3 class="table-des">Geo - Heatmap</h3>
+                            <img src="static/images/geo_heatmap.JPG" style="width:50%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+{%endblock%}

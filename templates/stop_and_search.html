@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+        <form method="POST" action="/stop_and_search">
+    <div class="form-group col-md-2">
+        <select id="start_year" name="start_year" class="form-control">
+            <option selected>From...</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+    </div>
+    <div class="form-group col-md-1">
+        <select id="start_month" name="start_month" class="form-control">
+            <option selected>From...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+        <select id="finish_year" name="finish_year" class="form-control">
+            <option selected>To...</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+    </div>
+    <div class="form-group col-md-1">
+        <select id="finish_month" name="finish_month" class="form-control">
+            <option selected>To...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4">
+        <select id="location" name="location" class="form-control">
+            <option selected>Select Location...</option>
+            <option>West-Midlands</option>
+            <option>Staffordshire</option>
+            <option>Warwickshire</option>
+            <option>West-Mercia</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </div>
+</form>
+
+<div class="row content-row">
+    <div class="row monthly_stop_and_search_frequency">
+        <div class="col-m-12">
+            <h3 class="table-des">Monthly Stop and Search Frequency</h3>
+            <img src="static/plots/monthly_stop_and_search_frequency.png">
+        </div>
+    </div>
+    <div class="row object_of_search_count_plot_stop_and_search">
+        <div class="col-m-12">
+            <h3 class="table-des">Object of Search - Countplot</h3>
+            <img src="static/plots/object_of_search_count_plot_stop_and_search.png">
+        </div>
+    </div>
+    <div class="row legislation_count_plot_stop_and_search">
+        <div class="col-m-12">
+            <h3 class="table-des">Legislation - Countplot</h3>
+            <img src="static/plots/legislation_count_plot_stop_and_search.png">
+        </div>
+    </div>
+    <div class="row outcome_count_plot_stop_and_search">
+        <div class="col-m-12">
+            <h3 class="table-des">Outcomes - Countplot</h3>
+            <img src="static/plots/outcome_count_plot_stop_and_search.png">
+        </div>
+    </div>
+</div>
+
+{%endblock%}

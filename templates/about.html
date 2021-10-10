@@ -1,0 +1,210 @@
+<!--Author: myc847-->
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row about-top-row" style="margin-top: 0;">
+                        <div class="col-sm-4 about_info" >
+                            <img style="width:100%;" src="static/images/1723047.jpeg">
+
+                        </div>
+                        <div class="col-sm-4 about_info" >
+                            <h3>Author's Background</h3>
+                            <p>
+                                After studying marketing Melissa Yasmina Chauffour worked as a search engine optimization analyst and discovered her interest in coding.
+                            </p>
+                            <p>
+                                She chose the University of Birmingham to do her MSc in Computer Science. It is in the context of her studies that she is creating this web application.
+                            </p>
+                            <p>
+                                Passioned about crime since a young age, Melissa chose to focus on the crime rate in the West Midlands as her MSc dissertation subject.
+                            </p>
+
+                        </div>
+                        <div class="col-sm-4 about_info">
+                            <h3>Data Provenance</h3>
+                            <p>
+                                The data comes from data.police.uk which is a site for open data about crime and policing in England, Wales and Northern Ireland.
+
+                                We concentrated our efforts on the West Midlands region and its four police forces:
+                            </p>
+                            <ul>
+
+                            </ul>
+                            <li>Staffordshire Police</li>
+                            <li>Warwickshire Police</li>
+                            <li>West Mercia Police</li>
+                            <li>West Midlands Police</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Two datasets were used, street-level crime and stop and search between January 2011 and March 2021.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row content-row" style="width:80%; margin:0 auto;">
+                <div class="col-md-12">
+                   <h3 class="table-des">The following table gives a detailed description of the crime types in the dataset</h3>
+                   <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>Crime Type</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>Anti-social behaviour</td>
+                            <td>Includes personal, environmental and nuisance anti-social behaviour.</td>
+                          </tr>
+                          <tr>
+                            <td>Bicycle theft</td>
+                            <td>Includes the taking without consent or theft of a pedal cycle.</td>
+                          </tr>
+                          <tr>
+                            <td>Burglary</td>
+                            <td>Includes offences where a person enters a house or other building with the intention of stealing.</td>
+                          </tr>
+                          <tr>
+                            <td>Criminal damage and arson</td>
+                            <td>Includes damage to buildings and vehicles and deliberate damage by fire.</td>
+                          </tr>
+                          <tr>
+                            <td>Drugs</td>
+                            <td>Includes offences related to possession, supply and production.</td>
+                          </tr>
+                          <tr>
+                            <td>Other crime</td>
+                            <td>Includes forgery, perjury and other miscellaneous crime.</td>
+                          </tr>
+                          <tr>
+                            <td>Other theft</td>
+                            <td>Includes theft by an employee, blackmail and making off without payment.</td>
+                          </tr>
+                          <tr>
+                            <td>Possession of weapons</td>
+                            <td>Includes possession of a weapon, such as a firearm or knife.</td>
+                          </tr>
+                          <tr>
+                            <td>Public order </td>
+                            <td>Includes offences which cause fear, alarm or distress.</td>
+                          </tr>
+                          <tr>
+                            <td>Robbery</td>
+                            <td>Includes offences where a person uses force or threat of force to steal.</td>
+                          </tr>
+                          <tr>
+                            <td>Shoplifting</td>
+                            <td>Includes theft from shops or stalls.</td>
+                          </tr>
+                          <tr>
+                            <td>Theft from the person</td>
+                            <td>Includes crimes that involve theft directly from the victim (including handbag, wallet, cash, mobile phones) but without the use or threat of physical force.</td>
+                          </tr>
+                          <tr>
+                            <td>Vehicle crime</td>
+                            <td>Includes theft from or of a vehicle or interference with a vehicle.</td>
+                          </tr>
+                          <tr>
+                            <td>Violence and sexual offences</td>
+                            <td>Includes offences against the person such as common assaults, Grievous Bodily Harm, and sexual offences.</td>
+                          </tr>
+                          <tr>
+                            <td>All crime</td>
+                            <td>Total for all categories.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <h3 class="table-des" style="margin-top:100px;">The following table gives a detailed description of each feature used</h3>
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>Month</td>
+                            <td>The date the crime was committed (e.g. 2021-03).</td>
+                          </tr>
+                          <tr>
+                            <td>Longitude</td>
+                            <td>The anonymised coordinates of the crime.</td>
+                          </tr>
+                          <tr>
+                            <td>Latitude</td>
+                            <td>The anonymised coordinates of the crime.</td>
+                          </tr>
+                          <tr>
+                            <td>Location</td>
+                            <td>Where the crime occurred (specific or near location).</td>
+                          </tr>
+                          <tr>
+                            <td>LSOA name</td>
+                            <td>The name of the Lower Layer Super Output Area where the crime occurred.</td>
+                          </tr>
+                          <tr>
+                            <td>Crime type</td>
+                            <td>One of the crime types.</td>
+                          </tr>
+                          <tr>
+                            <td>Legislation</td>
+                            <td>The legislation linked to the object of search.</td>
+                          </tr>
+                          <tr>
+                            <td>Object of search</td>
+                            <td>The object searched for during the stop and search.</td>
+                          </tr>
+                          <tr>
+                            <td>Outcome</td>
+                            <td>The outcome of the stop and search.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="row ">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6 graph" >
+                            <h3 class="table-des" style="margin-top:100px;">The West Midlands Region</h3>
+                            <img src="static/images/WestMidlandsRegion.png" style="width:50%;">
+                        </div>
+                        <div class="col-sm-6 search_object">
+                            <h3 class="table-des" style="margin-top:100px;">The West Midlands Region - Overview</h3>
+                            <div>The West Midlands is one of the nine official regions of England with a 2014 estimated population of 5,713,000 which makes it the second most populous region in England.
+                             <br>
+                                 <br>
+                            The region consists of the following counties:
+                                 <br>
+                                    Herefordshire,
+                            Shropshire,
+                            Staffordshire,
+                            Warwickshire,
+                                Worcestershire and the
+                            West Midlands.
+                            <br>
+                                <br>
+                            The region is known for its high rate of crime which is the second highest after London.
+                            In fact, between May 2020 and April 2021, the West Midlands has ranked 1st in possession of weapons crime, 2nd in vehicle crime and 3rd in burglary and violent crime.
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+{%endblock%}

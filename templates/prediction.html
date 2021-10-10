@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<style>
+    .table-des{
+        margin-top:0;
+    }
+
+    .content-row {
+    margin-top: 0;
+    text-align: center;
+    }
+
+    .my_text{
+    padding:5px;
+    margin:0;
+    text-align:left;
+    }
+</style>
+            
+            <div class="row content-row" >
+                <div class="col-md-12">
+                    <div class="row">
+                        <h3 class="table-des">Street-level Prediction</h3>
+                        <div class="col-sm-6 graph" >
+                            <img src="static/Prediction/Street 2.png">
+                        </div>
+
+                        <div class="col-sm-6 my_text">
+                            Facebook prophet is a regressor which uses a regression algorithm to fit a line to the data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row content-row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6 graph" >
+                            <img src="static/Prediction/Street 1.png">
+                        </div>
+                        <div class="col-sm-6 my_text">
+                            <ul>
+                                <li> Black dots: Actual data</li>
+                                <li> Blue line: Fitted to the data using the Facebook Prophet regressor.</li>
+                                <li> Blue shade: Error margin.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content-row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <h3 class="table-des">Stop and Search - Prediction</h3>
+                        <div class="col-sm-6 graph" >
+                            <img src="static/Prediction/Stop and Search 2.png">
+                        </div>
+                        <div class="col-sm-6 my_text">
+                            Facebook prophet is a regressor which uses a regression algorithm to fit a line to the data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row content-row">
+                <div class="col-md-12">
+                    <div class="row">
+
+                        <div class="col-sm-6 graph" >
+                            <img src="static/Prediction/Stop and Search 1.png">
+                        </div>
+                        <div class="col-sm-6 my_text">
+                            <ul>
+                                <li> Black dots: Actual data</li>
+                                <li> Blue line: Fitted to the data using the Facebook Prophet regressor.</li>
+                                <li> Blue shade: Error margin.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{%endblock%}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crime Analysis West Midlands UK</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--This is the bootstrap cdn (style sheet)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--This is the project's hand written style sheet-->
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <!--This is from the Google APIs. It is to import the Jquery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--This was copied from the bootstrap website to help make dynamic features using javascript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#start_year").change(function(){
+                    var val = $(this).val();
+                    if(val == "2021"){
+                        $("#start_month").html("<option>From...</option><option>1</option><option>2</option><option>3</option>")
+                    }else{
+                        $("#start_month").html("<option>From...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>")
+                    }
+                });
+                $("#finish_year").change(function(){
+                    var val = $(this).val();
+                    if(val == "2021"){
+                        $("#finish_month").html("<option>To...</option><option>1</option><option>2</option><option>3</option>")
+                    }else{
+                        $("#finsih_month").html("<option>To...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>")
+                    }
+
+                });
+
+            });
+
+
+
+        </script>
+
+    </head>
+<body class="container">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+            <img src="/static/images/logo.png">
+            <div class= "brand-logo-name"> Once Upon a Crime: The West Midlands Region </div>
+        </a>
+    </header>
+
+    <br>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Overview</a></li>
+                <li><a href="/statistics">Statistics</a></li>
+                <li><a href="/prediction">Prediction</a></li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/stop_and_search">Stop and Search</a></li>
+                    <li><a href="/crime_advice">Crime Prevention Advice</a></li>
+                </ul>
+                </li>
+                <li><a href="/about">About</a></li>
+            </ul>
+            <!--
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            -->
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+
+    {% endblock %}
+
+    <!--W3schools https://www.w3schools.com/tags/tag_footer.asp -->
+    <footer class="footer">
+        Author: Melissa Yasmina Chauffour - 1723047 -
+        <a href="mailto:myc847@student.bham.ac.uk">myc847@student.bham.ac.uk</a>
+        <br>
+        Copyright <i class="fa fa-copyright"></i> 2021 myc847. All rights reserved
+    </footer>
+</body>
+</html>
+

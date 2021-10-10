@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding:0;
+    margin: 0 auto;
+
+}
+
+.main-header{
+    align-items: center;
+    padding-top:20px;
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.brand-logo:hover, .brand-logo:focus{
+    text-decoration: none;
+    color: #000;
+}
+
+.brand-logo img{
+    width: 80px;
+    margin-left: 3rem;
+}
+
+.brand-logo-name{
+   /*font-family: 'Righteous', cursive;*/
+   /*font-family: 'ZCOOL KuaiLe', cursive;*/
+   /*font-family: 'Mate SC', serif;*/
+   /*font-family: 'Padauk', sans-serif;*/
+   /*font-family: 'Roboto', sans-serif;*/
+   font-family: 'Special Elite', cursive;
+   font-weight: light;
+   font-size: 1.8em;
+   margin-left: 2em;
+}
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #000;
+}
+
+.navbar {
+    border-radius: 0px;
+    border: none;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #941100;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-toggle:hover {
+    background-color: #000;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #fff;
+    border:none;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #000;
+}
+
+.row{
+    margin: 0 2rem;
+}
+
+.content-row{
+    margin-top:100px;
+    text-align:center;
+}
+
+.content-row row{
+    background-color:#
+    text-align:center;
+}
+
+.content-row img{
+    width:99%;
+    margin:5px;
+    text-align:center;
+}
+form {
+    margin-top:-20px;
+}
+.form {
+    min-width: 100%;
+
+}
+.form-group{
+    background-color: #262626;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.monthly_frequency{
+    text-align: center;
+}
+
+.monthly_frequency img{
+    width:100%;
+}
+
+.count_plot{
+    text-align: center;
+}
+
+.count_plot img{
+    width:100%;
+}
+
+.legislation{
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    background-color:lightblue;
+}
+
+.outcome{
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    background-color:rgb(217, 243, 242);
+}
+
+
+.info_row div{
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 5px 15px 5px 15px;
+    background-color:rgb(83, 83, 83);
+    width: 60%;
+    color: #fff;
+
+}
+
+.info_row div h3{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+#myCarousel{
+    margin-top: -20px;
+}
+
+
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    color: #A6372F;
+    font-size: 1.1em;
+}
+
+.footer a{
+    color: #A6372F;
+}
+
+.footer a:hover{
+    color: #A6372F;
+}
+
+.footer a:active{
+    color: #A6372F;
+}
+
+.table{
+    margin: 0 auto;
+    font-size: 1.0vw;
+}
+
+.table tr{
+    text-align:left;
+}
+
+.about-top-row{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #C7DBDA;
+    padding: 60px;
+    margin-bottom:50px;
+}
+
+.about_info{
+    color:#262626;
+    text-align:left;
+    font-size:12pt;
+}
+
+
+.table-des{
+    margin-top: 10px;
+    background: #C7DBDA;
+    padding: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thead-dark {
+    background-color:#941100;
+    color: #fff;
+}
