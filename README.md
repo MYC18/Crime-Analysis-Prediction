@@ -1,6 +1,6 @@
 # Crime Analysis and Prediction
 ### Author: Melissa Yasmina Chauffour
-#### Student ID: 1723047
+
 <br>
 
 ### Description:
