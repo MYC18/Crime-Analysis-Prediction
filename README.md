@@ -1,5 +1,5 @@
 # Crime Analysis and Prediction
-### Author: Melissa Yasmina Chauffour
+### Author: MYC18
 
 <br>
 
